@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   # Name and version
-  spec.name         = 'FingerprintPro'
-  spec.version      = '2.17.1'
+  spec.name         = 'Fingerprint-iOS'
+  spec.version      = '4.0.0'
 
   # License
   spec.license      = { type: 'Custom', file: 'LICENSE' }
@@ -12,25 +12,25 @@ Pod::Spec.new do |spec|
     'Fingerprint.com': 'support@fingerprint.com'
   }
 
-  # Fingerprint Pro library description
-  spec.summary = 'Pro version of Fingerprint\'s lightweight device fingerprinting library for iOS'
+  # Fingerprint library description
+  spec.summary = 'Fingerprint\'s lightweight device fingerprinting library for iOS'
   spec.description = <<-DESC
-  Fingerprint PRO is a simple wrapper around Fingerprint\'s API that collects device information
+  Fingerprint is a simple wrapper around Fingerprint\'s API that collects device information
   to uniquely identify iOS devices. The library communicates with the Fingerprint backend to send
   device signals (hardware information, available identifiers, OS information and device settings)
   and get a more precise fingerprint in return.
   DESC
 
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '14.0'
   spec.tvos.deployment_target = '15.0'
 
   spec.swift_versions = ['5.9', '5.10', '6.0']
 
-  spec.vendored_frameworks = 'FingerprintPro.xcframework'
+  spec.vendored_frameworks = 'Fingerprint.xcframework'
 
-  checksum = "1f3d874758752a48aae76549f2cfe924ae7923604f66516d4dd03342a1d29ebf"
+  checksum = "3092cadecd3252da4ded3cefe4eefdd7644a32c10aee4170ad4ea5e7e88d59d3"
 
   spec.source = {
-    :http => "https://fpjs-public.s3.amazonaws.com/ios/#{spec.version}/FingerprintPro-#{spec.version}-#{checksum}.xcframework.zip" 
+    :http => "https://fpjs-public.s3.amazonaws.com/ios/#{spec.version}/Fingerprint-#{spec.version}-#{checksum}.xcframework.zip"
   }
 end
